@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="505.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.descooperation.nusrat.customer.UsageHistoryController">
+   <children>
+      <Label layoutX="190.0" layoutY="31.0" prefHeight="24.0" prefWidth="302.0" text="Usage &amp; Consumption History" />
+      <Label layoutX="29.0" layoutY="107.0" prefHeight="17.0" prefWidth="323.0" text="View your monthly Electricity Usage and Billing Records :" />
+      <TableView fx:id="usageTableView" layoutX="14.0" layoutY="139.0" prefHeight="200.0" prefWidth="658.0">
+        <columns>
+          <TableColumn fx:id="dateTableCol" prefWidth="148.0" text="Month" />
+          <TableColumn fx:id="unitsTableCol" minWidth="0.0" prefWidth="160.0" text="Units Used" />
+            <TableColumn fx:id="billTableCol" prefWidth="161.0" text="Bill Amount" />
+            <TableColumn fx:id="statusTableCol" prefWidth="187.0" text="Payment Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="29.0" layoutY="351.0" mnemonicParsing="false" onAction="#loadHistoryButtonOnAction" prefHeight="25.0" prefWidth="149.0" text="Load Histoory" />
+      <Button layoutX="216.0" layoutY="351.0" mnemonicParsing="false" onAction="#viewGraphButtonOnAction" prefHeight="25.0" prefWidth="149.0" text="View Graph" />
+      <Button layoutX="390.0" layoutY="351.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="25.0" prefWidth="183.0" text="Back" />
+   </children>
+</AnchorPane>
