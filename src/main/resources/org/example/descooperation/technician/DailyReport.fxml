@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="511.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.descooperation.nusrat.technician.DailyReportController">
+   <children>
+      <Label layoutX="197.0" layoutY="38.0" prefHeight="17.0" prefWidth="246.0" text="Daily Complaination Report" />
+      <Label layoutX="76.0" layoutY="104.0" text="Date :" />
+      <DatePicker layoutX="110.0" layoutY="100.0" />
+      <TextField fx:id="totalAssignedField" layoutX="171.0" layoutY="151.0" />
+      <Text layoutX="53.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Task Assigned :" />
+      <Text layoutX="53.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Completed : " />
+      <TextField fx:id="taskCompletedField" layoutX="171.0" layoutY="194.0" />
+      <Text layoutX="53.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panding Task :" />
+      <TextField fx:id="pandingtaskField" layoutX="171.0" layoutY="227.0" />
+      <Text layoutX="358.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks :" />
+      <TextArea fx:id="remarksArea" layoutX="443.0" layoutY="99.0" prefHeight="146.0" prefWidth="200.0" />
+      <Button fx:id="uploadButton" layoutX="567.0" layoutY="258.0" mnemonicParsing="false" text="Choose File" />
+      <Button layoutX="177.0" layoutY="309.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+      <Button layoutX="66.0" layoutY="309.0" mnemonicParsing="false" onAction="#submitButtonaOnAction" text="Submit" />
+      <Text layoutX="443.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uplad Supporting File:" />
+   </children>
+</AnchorPane>

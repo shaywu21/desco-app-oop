@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="539.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.descooperation.nusrat.technician.AssignedWorkOrdersController">
+   <children>
+      <Label layoutX="236.0" layoutY="33.0" prefHeight="17.0" prefWidth="276.0" text="Assigned Work Orders" />
+      <TableView fx:id="workOrderTableView" layoutX="36.0" layoutY="104.0" prefHeight="200.0" prefWidth="658.0">
+        <columns>
+          <TableColumn fx:id="workOrderIdCol" prefWidth="103.0" text="Work Order ID" />
+          <TableColumn fx:id="customerIdCol" prefWidth="111.0" text="Customer ID" />
+            <TableColumn fx:id="taskTypeCol" prefWidth="124.0" text="Task Type" />
+            <TableColumn fx:id="statusCol" prefWidth="103.0" text="Status " />
+            <TableColumn fx:id="assignedDateCol" prefWidth="114.0" text="Assigned Date" />
+            <TableColumn fx:id="dueDateCol" prefWidth="101.0" text="Due Date" />
+        </columns>
+      </TableView>
+      <TextField fx:id="workOrderIdField" layoutX="53.0" layoutY="330.0" text="enter work order id " />
+      <Button layoutX="63.0" layoutY="372.0" mnemonicParsing="false" onAction="#loadWorkOrdersButtonOnAction" text="Load" />
+      <Button layoutX="165.0" layoutY="372.0" mnemonicParsing="false" onAction="#viewDetailsOnAction" text="View Details " />
+      <Button layoutX="271.0" layoutY="372.0" mnemonicParsing="false" onAction="#acknowledgeButtonOnAction" text="Acknowledge" />
+      <Button layoutX="386.0" layoutY="372.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+   </children>
+</AnchorPane>

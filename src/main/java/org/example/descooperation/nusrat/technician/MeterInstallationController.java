@@ -1,4 +1,4 @@
-package org.example.descooperation.nusrat.customer;
+package org.example.descooperation.nusrat.technician;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -6,35 +6,30 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class NewConnectionController
+public class MeterInstallationController
 {
     @javafx.fxml.FXML
-    private TextField addressTextField;
+    private TextField customerNameField;
     @javafx.fxml.FXML
-    private TextField nidTextField;
+    private ComboBox<String> meterTypeComboBox;
     @javafx.fxml.FXML
-    private TextField documentTextField;
+    private TextArea remarksArea;
     @javafx.fxml.FXML
-    private ComboBox<String> connectionTypeComboBox;
+    private TextField meterSerialField;
     @javafx.fxml.FXML
-    private TextField contactNoTextField;
+    private TextField workOrderIdField;
     @javafx.fxml.FXML
-    private TextField nameTextField;
+    private TextField addressField;
     @javafx.fxml.FXML
-    private TextField loadTextField;
-    @javafx.fxml.FXML
-    private Label messageLabel;
+    private DatePicker installationDatePicker;
 
     @javafx.fxml.FXML
     public void initialize() {
-    }
-
-    @javafx.fxml.FXML
-    public void browseButtonOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

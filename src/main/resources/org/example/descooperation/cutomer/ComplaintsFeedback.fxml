@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="526.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.descooperation.nusrat.customer.ComplaintsFeedbackController">
+   <children>
+      <Label layoutX="257.0" layoutY="49.0" prefHeight="17.0" prefWidth="222.0" text="Submit Complaints &amp; Feedback" />
+      <Label layoutX="52.0" layoutY="134.0" prefHeight="17.0" prefWidth="153.0" text="Customer Id :" />
+      <Label layoutX="52.0" layoutY="172.0" text="Complaint Type :" />
+      <TextField fx:id="complaintIdField" layoutX="157.0" layoutY="130.0" />
+      <ComboBox fx:id="complaintTypeComboBox" layoutX="148.0" layoutY="168.0" prefWidth="150.0" />
+      <Label layoutX="69.0" layoutY="222.0" text="Description : " />
+      <TextArea fx:id="descriptionArea" layoutX="142.0" layoutY="200.0" prefHeight="83.0" prefWidth="200.0" />
+      <Button layoutX="361.0" layoutY="314.0" mnemonicParsing="false" onAction="#submitButoonOnAction" text="Submit" />
+      <Button layoutX="223.0" layoutY="314.0" mnemonicParsing="false" onAction="#clearButtoonOnAction" text="Clear" />
+      <Button layoutX="97.0" layoutY="314.0" mnemonicParsing="false" onAction="#backButtonOnAcion" text="Back" />
+   </children>
+</AnchorPane>

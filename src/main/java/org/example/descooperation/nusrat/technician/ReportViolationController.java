@@ -1,4 +1,4 @@
-package org.example.descooperation.nusrat.customer;
+package org.example.descooperation.nusrat.technician;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -6,43 +6,36 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class NewConnectionController
+public class ReportViolationController
 {
     @javafx.fxml.FXML
-    private TextField addressTextField;
+    private TextField violationLocationField;
     @javafx.fxml.FXML
-    private TextField nidTextField;
+    private ComboBox<String> violationTypeComboBox;
     @javafx.fxml.FXML
-    private TextField documentTextField;
+    private TextField customerNameTextField;
     @javafx.fxml.FXML
-    private ComboBox<String> connectionTypeComboBox;
-    @javafx.fxml.FXML
-    private TextField contactNoTextField;
-    @javafx.fxml.FXML
-    private TextField nameTextField;
-    @javafx.fxml.FXML
-    private TextField loadTextField;
-    @javafx.fxml.FXML
-    private Label messageLabel;
+    private TextArea descriptionTextArea;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void browseButtonOnAction(ActionEvent actionEvent) {
+    public void submitButtnOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void submitButtonOnAction(ActionEvent actionEvent) {
+    public void uploadEvidenceButtonOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
     public void backButtonOnAction(ActionEvent actionEvent) {
+        sceneSwitch();
     }
 
     private void sceneSwitch(String fxml, ActionEvent actionEvent){

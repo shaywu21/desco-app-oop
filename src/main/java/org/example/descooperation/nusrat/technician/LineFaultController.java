@@ -1,4 +1,4 @@
-package org.example.descooperation.nusrat.customer;
+package org.example.descooperation.nusrat.technician;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -6,35 +6,25 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.DatePicker;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class NewConnectionController
+public class LineFaultController
 {
     @javafx.fxml.FXML
-    private TextField addressTextField;
+    private ComboBox<String> faultTypeComboBox;
     @javafx.fxml.FXML
-    private TextField nidTextField;
+    private DatePicker dateDetectedPicker;
     @javafx.fxml.FXML
-    private TextField documentTextField;
-    @javafx.fxml.FXML
-    private ComboBox<String> connectionTypeComboBox;
-    @javafx.fxml.FXML
-    private TextField contactNoTextField;
-    @javafx.fxml.FXML
-    private TextField nameTextField;
-    @javafx.fxml.FXML
-    private TextField loadTextField;
-    @javafx.fxml.FXML
-    private Label messageLabel;
+    private Text faultLocationTextField;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void browseButtonOnAction(ActionEvent actionEvent) {
+    public void uploadPhotoButtonOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

@@ -15,6 +15,9 @@ public class WorkOrder {
         this.dueDate = dueDate;
     }
 
+    public WorkOrder(String number, String number1, String number2, LocalDate localDate, LocalDate assigneDate) {
+    }
+
     public String getWorkOrderId() {
         return workOrderId;
     }
@@ -51,7 +54,7 @@ public class WorkOrder {
         return assigneDate;
     }
 
-    public void setAssigneDate(LocalDate assigneDate) {
+    public void setAssigneDate(LocalDate assignedDate) {
         this.assigneDate = assigneDate;
     }
 
@@ -65,5 +68,17 @@ public class WorkOrder {
 
     public void attachEvidence(){
 
+    }
+
+    @Override
+    public String toString() {
+        return "WorkOrder{" +
+                "workOrderId='" + workOrderId + '\'' +
+                ", taskType='" + taskType + '\'' +
+                ", customerId='" + customerId + '\'' +
+                ", status='" + status + '\'' +
+                ", assigneDate=" + assigneDate +
+                ", dueDate=" + dueDate +
+                '}';
     }
 }
