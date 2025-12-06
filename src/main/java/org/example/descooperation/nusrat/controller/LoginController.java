@@ -11,11 +11,11 @@ public class LoginController
     @javafx.fxml.FXML
     private ComboBox roleComboBox;
     @javafx.fxml.FXML
-    private PasswordField passwordField;
-    @javafx.fxml.FXML
     private Label errorLabel;
     @javafx.fxml.FXML
     private TextField usernameTextField;
+    @javafx.fxml.FXML
+    private TextField passwordField;
 
     @javafx.fxml.FXML
     public void initialize() {

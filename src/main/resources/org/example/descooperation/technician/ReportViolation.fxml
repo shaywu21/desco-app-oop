@@ -10,19 +10,19 @@
 
 
 <AnchorPane prefHeight="540.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.descooperation.nusrat.technician.ReportViolationController">
-   <children>
-      <Label layoutX="251.0" layoutY="52.0" text="Report Electricity Violation" />
-      <Label layoutX="82.0" layoutY="97.0" text="Your Name:" />
-      <TextField fx:id="customerNameTextField" layoutX="165.0" layoutY="93.0" text="Enter your full name" />
-      <Text layoutX="64.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Violation Location:" />
-      <TextField fx:id="violationLocationField" layoutX="165.0" layoutY="133.0" />
-      <Text layoutX="74.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Violation Type:" />
-      <ComboBox fx:id="violationTypeComboBox" layoutX="165.0" layoutY="170.0" prefWidth="150.0" />
-      <Text layoutX="71.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" />
-      <TextArea fx:id="descriptionTextArea" layoutX="140.0" layoutY="210.0" prefHeight="82.0" prefWidth="439.0" />
-      <Text layoutX="71.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload Photo Evidence " />
-      <Button layoutX="199.0" layoutY="313.0" mnemonicParsing="false" onAction="#uploadEvidenceButtonOnAction" text="Button" />
-      <Button layoutX="535.0" layoutY="363.0" mnemonicParsing="false" onAction="#submitButtnOnAction" text="Submit" />
-      <Button layoutX="103.0" layoutY="363.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
-   </children>
+    <children>
+        <Label layoutX="251.0" layoutY="52.0" text="Report Electricity Violation" />
+        <Label layoutX="82.0" layoutY="97.0" text="Your Name:" />
+        <TextField fx:id="customerNameTextField" layoutX="165.0" layoutY="93.0" text="Enter your full name" />
+        <Text layoutX="64.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Violation Location:" />
+        <TextField fx:id="violationLocationField" layoutX="165.0" layoutY="133.0" />
+        <Text layoutX="74.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Violation Type:" />
+        <ComboBox fx:id="violationTypeComboBox" layoutX="165.0" layoutY="170.0" prefWidth="150.0" />
+        <Text layoutX="71.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" />
+        <TextArea fx:id="descriptionTextArea" layoutX="140.0" layoutY="210.0" prefHeight="82.0" prefWidth="439.0" />
+        <Text layoutX="71.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload Photo Evidence " />
+        <Button layoutX="199.0" layoutY="313.0" mnemonicParsing="false" onAction="#uploadEvidenceButtonOnAction" text="Button" />
+        <Button layoutX="535.0" layoutY="363.0" mnemonicParsing="false" onAction="#submitButtnOnAction" text="Submit" />
+        <Button layoutX="103.0" layoutY="363.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+    </children>
 </AnchorPane>
