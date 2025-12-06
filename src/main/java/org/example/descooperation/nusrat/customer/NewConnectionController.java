@@ -45,38 +45,47 @@ public class NewConnectionController
     public void browseButtonOnAction(ActionEvent actionEvent) {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Open resource file");
-        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("x","y","z"),
-                new FileChooser.ExtensionFilter("w","m","n"));
+        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("x", "y", "z"),
+                new FileChooser.ExtensionFilter("w", "m", "n"));
 
         File selectedFile = fileChooser.showOpenDialog(null);
         if (selectedFile != null) {
             documentTextField.setText(selectedFile.getAbsolutePath());
-    }
-
-    @javafx.fxml.FXML
-
-    public void submitButtonOnAction(ActionEvent actionEvent) {
-            String name = nameTextField.getText();
-            String nid = nidTextField.getText();
-            String address = addressTextField.getText();
-            String contactNo = contactNoTextField.getText();
-            String load = loadTextField.getText();
-            String document = documentTextField.getText();
-            String connectionType = connectionTypeComboBox.getValue();
-
-            if (name.isEmpty() || nid.isEmpty() || address.isEmpty() ||
-                    contactNo.isEmpty() || load.isEmpty() || connectionType == null || document.isEmpty()) {
-                showAlert(Alert.AlertType.ERROR, "Validation Error", "Please fill all fields, select connection type and attach a document.");
-                return;
-            }
-
-    }
-
-    @javafx.fxml.FXML
-    public void backButtonOnAction(ActionEvent actionEvent) {
-
         }
     }
+    @javafx.fxml.FXML
+    public void submitButtonOnAction(ActionEvent actionEvent) {
+        String name = nameTextField.getText();
+        String nid = nidTextField.getText();
+        String address = addressTextField.getText();
+        String contactNo = contactNoTextField.getText();
+        String load = loadTextField.getText();
+        String document = documentTextField.getText();
+        String connectionType = connectionTypeComboBox.getValue();
+
+        if (name.isEmpty() || nid.isEmpty() || address.isEmpty() ||
+                contactNo.isEmpty() || load.isEmpty() || document.isEmpty() ||
+                connectionType == null) {
+
+            showAlert(Alert.AlertType.ERROR,
+                    "Validation Error",
+                    "Please fill all fields, select connection type and attach a document.");
+            return;
+        }
+
+        showAlert(Alert.AlertType.INFORMATION,
+                "Success",
+                "Your new connection request has been submitted!");
+
+        clearFields();
+    }
+
+    @javafx.fxml.FXML
+    public void backButtonOnAction (ActionEvent actionEvent){
+        sceneSwitch("/org/example/descooperation/nusrat/customer/CustomerDashboard.fxml", actionEvent);
+
+    }
+
 
     private void sceneSwitch(String fxml, ActionEvent actionEvent){
         try{
@@ -95,6 +104,15 @@ public class NewConnectionController
         a.setHeaderText(null);
         a.setContentText(s);
         a.show();
+    }
+    private void clearFields(){
+        nameTextField.clear();
+        nidTextField.clear();
+        addressTextField.clear();
+        contactNoTextField.clear();
+        loadTextField.clear();
+        documentTextField.clear();
+        connectionTypeComboBox.getSelectionModel().clearSelection();
     }
 
 }

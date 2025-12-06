@@ -29,11 +29,15 @@ public class LoginController
         String password = passwordField.getText();
         String role = roleComboBox.getValue().toString();
 
-    }
-        if (username.isEmpty() || password.isEmpty() || role == null){
+        if (username.isEmpty() || password.isEmpty() || role == null) {
             errorLabel.setText("Please fill all the fields");
-            return;
+        }
+        errorLabel.setText("");
+
+        System.out.println("Login successful with role: " + role);
 
     }
-        System.out.println("Login successful with role: " + role);
+
+
+
 }

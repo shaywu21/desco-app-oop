@@ -100,7 +100,7 @@ public class ProfileSettingController
         alert.setContentText(m);
 
     }
-    private void SceneSwitch(String fxml, ActionEvent actionEvent){
+    private void SceneSwitch(String fxml, ActionEvent event){
         try{
             root = FXMLLoader.load(getClass().getResource(fxml));
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
