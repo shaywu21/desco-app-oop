@@ -10,6 +10,8 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.time.LocalDate;
+
 public class LineFaultController
 {
     @javafx.fxml.FXML
@@ -34,6 +36,8 @@ public class LineFaultController
                 "Burned Cable",
                 "Loose Connection"
         );
+
+        dateDetectedPicker.setValue(LocalDate.now());
     }
 
     @javafx.fxml.FXML

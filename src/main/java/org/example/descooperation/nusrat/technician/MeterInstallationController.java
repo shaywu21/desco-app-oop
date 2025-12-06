@@ -38,6 +38,7 @@ public class MeterInstallationController
 
     @javafx.fxml.FXML
     public void backButtonOnAction(ActionEvent actionEvent) {
+        sceneSwitch("/org/example/descooperation/nusrat/technician/FieldTechnicianDashboard.fxml",actionEvent);
     }
 
     private void sceneSwitch(String fxml, ActionEvent actionEvent){
