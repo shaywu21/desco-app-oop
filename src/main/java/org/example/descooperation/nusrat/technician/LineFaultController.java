@@ -19,8 +19,21 @@ public class LineFaultController
     @javafx.fxml.FXML
     private Text faultLocationTextField;
 
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+
+
     @javafx.fxml.FXML
     public void initialize() {
+        faultTypeComboBox.getItems().addAll(
+                "Line Break",
+                "Transformer Issue",
+                "Voltage Drop",
+                "Sparking",
+                "Burned Cable",
+                "Loose Connection"
+        );
     }
 
     @javafx.fxml.FXML
@@ -33,6 +46,7 @@ public class LineFaultController
 
     @javafx.fxml.FXML
     public void backButtonOnAction(ActionEvent actionEvent) {
+        sceneSwitch("/org/example/descooperation/nusrat/technician/FieldTechnicianDashboard.fxml", actionEvent);
     }
 
     private void sceneSwitch(String fxml, ActionEvent actionEvent){

@@ -18,6 +18,10 @@ public class EmergencyTaskController
     @javafx.fxml.FXML
     private TextArea detailsArea;
 
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+
     @javafx.fxml.FXML
     public void initialize() {
     }
@@ -32,6 +36,7 @@ public class EmergencyTaskController
 
     @javafx.fxml.FXML
     public void backButtonOnAction(ActionEvent actionEvent) {
+        sceneSwitch("/org/example/descooperation/nusrat/technician/FieldTechnicianDashboard.fxml", actionEvent);
     }
 
     private void sceneSwitch(String fxml, ActionEvent event){
